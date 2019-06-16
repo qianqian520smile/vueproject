@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    发现84561啊但是毕竟都是北方交大V觉得女减肥你打开V的看都会崩溃的空间达芙妮封口费到付款V愤怒的
+    发现84561啊但是毕竟都是北方交大V觉得
     {{userinfo}}
   </div>
 </template>
