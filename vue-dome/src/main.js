@@ -7,7 +7,7 @@ import './utils/fonts/iconfont.css'
 import store from './store'
 import head from '@/components/header/head'
 import {DatePicker,TimePicker} from 'element-ui'
-Vue.component('el-header',head);
+Vue.component('el-header',head)
 Vue.use(DatePicker)   //el-date-picker
 Vue.use(TimePicker)   //el-time-picker
 
