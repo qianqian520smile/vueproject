@@ -1,0 +1,151 @@
+@import "@/static/scss/_minix.scss";
+@import "@/static/scss/common.scss";
+html,
+body,
+#app,
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.03);
+}
+.top_color{
+  background: limegreen;
+  color: #fff;
+}
+.top_t {
+  display: flex;
+  height: pxTorem(120px);
+  background: limegreen;
+  color: #fff;
+  padding-bottom: pxTorem(50px);
+  border-bottom-right-radius: pxTorem(50px);
+  border-bottom-left-radius: pxTorem(50px);
+}
+.left {
+  width: 20%;
+  text-align: center;
+  align-items: center;
+  margin: 0 pxTorem(10px);
+  line-height: 16;
+  .img {
+    width: pxTorem(60px);
+    height: pxTorem(60px);
+    line-height: pxTorem(60px);
+    border-radius: 50%;
+  }
+}
+.right {
+  .you {
+    font-size: pxTorem(13px);
+    align-items: center;
+  }
+  li {
+    margin: pxTorem(10px) 0;
+
+    font-size: pxTorem(14px);
+  }
+  .user {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.back {
+  width: 100%;
+  flex: 1;
+  position: relative;
+  top: pxTorem(-40px);
+  .detail {
+    margin: 0 pxTorem(30px);
+    background: #fff;
+    border-radius: pxTorem(15px);
+    h2 {
+      font-size: pxTorem(16px);
+      padding: pxTorem(10px) pxTorem(10px);
+    }
+    ul {
+      margin: 0 pxTorem(9px);
+      li {
+        font-size: pxTorem(13px);
+        padding: pxTorem(5px);
+
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  .qustion {
+    margin: pxTorem(20px) pxTorem(30px);
+    background: #fff;
+    border-radius: pxTorem(15px);
+
+    h2 {
+      font-size: pxTorem(16px);
+      padding: pxTorem(10px) pxTorem(10px);
+    }
+    textarea {
+      border-top: pxTorem(1px) solid #ccc;
+      // padding:0 pxTorem(15px);
+      font-size: pxTorem(13px);
+      width: 100%;
+      height: pxTorem(60px);
+    }
+  }
+  .file {
+    margin: 0 pxTorem(30px);
+    padding: pxTorem(20px) 0;
+    background: #fff;
+    border-radius: pxTorem(15px);
+    h2 {
+      font-size: pxTorem(16px);
+      padding: 0 pxTorem(15px) pxTorem(5px);
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        margin: pxTorem(5px);
+        img {
+          width: pxTorem(70px);
+          height: pxTorem(50px);
+        }
+      }
+    }
+  }
+  .bottom {
+    width: 100%;
+    height: pxTorem(50px);
+    background: #fff;
+    margin-top:pxTorem(20px);
+    ul {
+      display: flex;
+      text-align: center;
+      li {
+        flex: 1;
+        dl {
+          dd {
+            width: pxTorem(25px);
+            height: pxTorem(25px);
+            border-radius: 50%;
+            background: #ccc;
+            margin-left: pxTorem(100px);
+          }
+        }
+      }
+      .li {
+        line-height:pxTorem(50px);
+      }
+      .li_l {
+        background: #404a53;
+        color: #fff;
+      }
+      .li_r {
+        background: #0b6242;
+        color: #fff;
+      }
+    }
+  }
+}
