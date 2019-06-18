@@ -109,14 +109,19 @@
                 <li class="li li_r" @click="submitClick">提交</li>
             </ul>
        </div>
+       <alertMessage text="报错信息" />
     </div>
     </div>
 </template>
 <script>
+import alertMessage from "@/components/alertMessage"
 import {mapActions,mapState} from 'vuex';
 import api from '@/api';
 
 export default {
+  components:{
+alertMessage
+  },
     props:{
         type:String
     },
@@ -179,7 +184,7 @@ export default {
           let endtime=new Date(this.endtime);
           let num= endtime-startime;
           if(num<0){
-            alert('时间选择错误');
+            this.$alert('时间选择错误');
             return;
           }
           this.num=num;
@@ -198,7 +203,7 @@ export default {
               error= `请上传小于${this.guide.size}MB大小的文件`
           }
           if(error){
-            alert(error);
+             this.$alert(error);
             return;
           }
           // console.log(userfile)//向服务器提交文件
@@ -225,7 +230,7 @@ export default {
             if(msg==='提交成功'){
               this.$router.back();
             }else{
-              alert(msg)
+               this.$alert(msg)
             }
           })
         }
